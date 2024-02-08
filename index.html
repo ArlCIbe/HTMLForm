@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anything But The Word Document</title>
+    <title>Anything But The Word Document</title>\
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,17 +15,32 @@
 
     <main>
 
-        <form action="mailto:arlcibe@outlook.com" method="get" enctype="text/plain">
+        <aside style="float: right;">
             
-            What is Your Name?<br>
+            <h3>Addtional Inputs</h3>
+
+            <input type="color"><br>
+            <input type="date"><br>
+            <input type="file"><br>
+            <input type="hidden"><br>
+            <input type="number"><br>
+            <input type="password"><br>
+            <input type="search"><br>
+            <input type="tel"><br>
+
+        </aside>
+
+        <form action="mailto:arlcibe@outlook.com" method="get" enctype="text/plain">
+
+            <label for="yourName">What is Your Name?</label> <br>
 
             <input id="yourName" type="text" placeholder="John Doe"/><br>
 
-            What is your Email?<br>
+            <label for="yourEmail">What is your Email?</label><br>
 
             <input id="youremail" type="email" name="cc" placeholder="Your Email"/><br>
 
-            How May I Help You?<br>
+            <label for="subject-select">How May I Help You?</label><br>
 
             <select id="subject-select" name="subject">
                 <option value="Select an option belowe"></option>
@@ -32,16 +48,14 @@
                 <option value="Coding Lesson Inquiry">Teach Me How to Code</option>
             </select><br>
 
-            Tell Me More:<br>
+            <label for="yourMessage">Tell Me More:</label><br>
 
-            <textarea name="body" id="yourMessage" cols="30" rows="10"></textarea><br>
+            <textarea name="body" id="yourMessage" cols="25" rows="10"></textarea><br>
 
             <input type="submit" value="Contact Me">
 
-        </form>
-            
-            <aside style="float: right;"></aside>
-
+        </form> 
+        
     </main>
 
     <footer>built by <a href="https://github.com/ArlCIbe">ArlCIbe</a></footer>
